@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffa500; /* Change color on hover */
+}
+
+.toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 60px; /* Space for fixed navbar */
+    padding: 20px;
+}
+
+section {
+    height: 100vh; /* Full viewport height for demo */
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .toggle {
+        display: block; /* Show toggle on mobile */
+    }
+}
+/*css of home section*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    position: relative;
+    width: 100%; /* Full width */
+    max-width: 800px; /* Max width for larger screens */
+    margin: 20px auto; /* Center the container */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-container img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space from image */
+}
+
+.overlay-heading {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the heading */
+    color: white;
+    text-align: center;
+    font-size: 24px; /* Adjust font size as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 10px 20px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+}
+/*about section css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.about-section {
+    padding: 60px 20px; /* Padding around the section */
+    background-color: #fff; /* Background color for the about section */
+    max-width: 800px; /* Max width for larger screens */
+    margin: 20px auto; /* Center the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.about-container h2 {
+    color: #333;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-container p {
+    color: #555; /* Text color */
+    line-height: 1.6; /* Improved line height for readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.skills-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.skills-list li {
+    background: #ffa500; /* Background color for skills */
+    color: white; /* Text color */
+    margin: 5px 0; /* Space between items */
+    padding: 10px; /* Padding around items */
+    border-radius: 5px; /* Rounded corners */
+}
+/*contact css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.contact-section {
+    padding: 60px 20px; /* Padding around the section */
+    background-color: #fff; /* Background color for the contact section */
+    max-width: 800px; /* Max width for larger screens */
+    margin: 20px auto; /* Center the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.contact-container h2 {
+    color: #333;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact-container p {
+    color: #555; /* Text color */
+    line-height: 1.6; /* Improved line height for readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.contact-info {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.contact-info li {
+    margin: 10px 0; /* Space between items */
+    font-size: 18px; /* Font size for contact info */
+    color: #333; /* Text color */
+}
+
+.contact-info a {
+    color: #0d0a043b; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+/*footer css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.footer {
+    background-color: #333; /* Footer background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding for the footer */
+}
+
+.footer-container {
+    max-width: 800px; /* Max width for the footer */
+    margin: 0 auto; /* Center the footer */
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center vertically */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.social-icons {
+    display: flex; /* Horizontal alignment of icons */
+}
+
+.social-icons a {
+    color: white; /* Icon color */
+    margin-left: 15px; /* Space between icons */
+    font-size: 20px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.social-icons a:hover {
+    color: #ffa500; /* Change color on hover */
+}
+/*animation conatc css*/
+
+
+/*zoom effect*/
+#home{
+    transition: all 2s;
+
+
+}
+#home:hover{
+    transform:scale(1.2);
+}
+h2{
+    transition: all 2s;
+}
+h2:hover{
+    transform: scale(1.10);
+}
+/*about effect*/
+#about{
+    transition: all 2s;
+}
+#about:hover{
+    transform: scale(1.2);
+
+}
+/*skill zoom effect*/
+#services{
+transition: all 2s;
+}
+
+#services:hover{
+transform: scale(1.2);
+}
+/*contact zoom effect*/
+#contact{
+    transition: all 2s;
+    }
+    
+#contact:hover{
+    transform: scale(1.1);
+    }
+    
+
